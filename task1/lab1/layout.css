@@ -1,0 +1,502 @@
+@font-face {
+    font-weight: 400; /* Соответствует значению normal */
+    font-family: Roboto;
+    src: url("fonts/Roboto-Regular.ttf");
+  }
+  @font-face {
+    font-weight: 900; /* Соответствует значению normal */
+    font-family: Roboto;
+    src: url("fonts/Roboto-Bold.ttf");
+  }
+/* html, body, app-root {
+    height: 100%;
+} */
+.header-blok{
+    height: 104px;
+    background-color:rgba(246, 247, 248, 1 );
+}
+.header-blok__all{
+    height: 104px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12); 
+    
+}
+.header-blok__all{
+    /* width: 1360px;  */
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border:0;
+    background-color:rgba(255, 255, 255, 1);
+}
+
+.header-blok__main {
+    width: 1104px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.header-blok__main_left{
+    /* width: 583px; */
+    height: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 48px;
+    /* display: flex;  
+    flex-wrap: wrap; */
+    /* margin-right: 1rem;
+    margin-bottom: 1rem; */
+}
+
+.header-blok__logo{
+    width: 151px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    /* margin-right: 48px; */
+}
+.header-blok__img_logo{
+    width: 151px;
+    height: 34px;
+}
+.header-blok__tab_nav {
+    /* width: 384px; */
+    height: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+
+.header-blok__img {
+   float: left;
+}
+.header-blok__choice,.header-blok__link{
+    display: flex;
+    align-items: center;
+}
+.header-blok__choice:active{
+    color: red;
+}
+.header-blok__study{
+    /* width: 85px;
+    height: 64px; */
+    /* margin-right: 24px; */
+}
+.header-blok__internship{
+    /* width: 76px;
+    height: 64px; */
+    /* margin-right: 24px; */
+}
+.header-blok__event{
+    /* width: 175px;
+    height: 64px; */
+   
+}
+.header-blok__link  {
+    text-decoration: none; 
+}
+.header-blok__study{
+    width: 85px;
+}
+.header-blok__internship{
+    width: 76px;
+}
+.header-blok__event{
+    width: 175px;
+}
+span[status="activ"]{
+    color: rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0px -2px 0px 0px rgba(102, 102, 102, 1);
+}
+span[status="non activ"]{
+    color: rgba(0, 0, 0, 0.54);
+}
+a[status="activ"]{
+    color: rgba(0, 0, 0, 0.8);
+}
+a[status="non activ"]{
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.text__font{
+    font-family: Roboto; 
+}
+.header-blok__login{
+    color:rgba(51, 111, 238, 1);
+    width: 37px;
+}
+.header-blok__text{
+    font-size: 13px; 
+    line-height: 20px;  
+    margin: 0; 
+}
+.header-blok__main_right{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    padding: 20px 0px 20px 0px;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    background-color:rgba(246, 247, 248, 1 );
+}
+.section-block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* column-gap: 64px; */
+     row-gap: 64px;
+    /* тут 812 должно быть но с учетом пединга 812-80=732 */
+    height: 732px;
+    padding: 40px 128px 40px 128px;
+    /* background-color:rgba(246, 247, 248, 0.389); */
+}
+.section-block__img{
+    width: 1104px;
+    height: 460px;
+}
+.section-block__title{
+    margin: 0;
+    padding: 0;
+    border:0;
+    /* height: 48px; */
+}
+.section-block__inner_center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.section-block__inner{
+    /* вот тут вопрос, если я указываю размеры, то мне нужно чтобы произошло позиционирование  justify-content: center; - но вопрос где?
+    но если размеры не указывать, то все норм, он правильно выравнивается
+    поэтому оставил свободные размеры*/
+    /*upd: сделал доп слой  section-block__inner_center и туда засунул центрирование
+    -изменил размеры */
+    width: 912px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 40px;
+    height: 192px;
+}
+.section-block__text_block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 24px;
+    height: 96px;
+}
+.section-block__format_text,
+.section-block__inner__button,
+.course-assignment-block__format_text,
+.expectation__format_text,
+.education__format_text,
+.free__format_text,
+.selection__format_text {
+    display: flex;
+    justify-content: center;
+}
+.section-block__button{
+    width: 150px;
+    height: 56px;
+    border: 0px;
+    /* padding: 16px, 36px, 16px, 36px; */
+    row-gap: 8px;
+    column-gap: 8px;
+    background: rgba(255, 221, 45, 1);
+    border-radius: 8px 8px;
+    transition: all 300ms ease;
+}
+.main__title_text{
+    font-size: 44px;  
+    /* height: 48px; */
+    line-height: 48px; 
+}
+.main__base_text{
+    font-size: 15px; 
+    line-height: 24px; 
+}
+.section-block__button:hover {
+    background-color:rgba(252, 197, 33, 1);
+}
+.section-block__button:active {
+    background: rgba(250, 182, 25, 1);
+}
+.course-assignment-block{
+    height: 556px;
+}
+.course-assignment-block__title{
+    margin: 0;
+    border: 0;
+    width: 912px;
+    /* height: 48px; */
+    padding: 76px 224px 24px 224px;
+    row-gap: 24px;
+}
+.course-assignment-block__content{
+    padding: 24px 128px 24px 128px;
+    column-gap: 10px;
+}
+.course-assignment-block__box{
+    width: 1104px;
+    height: 360px;
+    display: flex;
+   
+    /* flex-wrap: wrap; */
+}
+.course-assignment-block__text{
+    display: flex;
+    flex-wrap: wrap; 
+    
+    height: 144px;
+
+    margin-top: 48px;
+    /* если это кто то читает, то в макете есть left параметр,
+     и как я понял это margin left но он там 768 
+     и чет мне показалось что это очень больше значение поэтому уменьшил
+     старался сделать как в макеты цифры (768 от начала -> 48 от картинки)*/
+    margin-left: 48px;
+
+    /* с гепом тоже не очень понятно, там его два, поставил тот который заходит по размерам */
+    row-gap: 12px;
+    /* row-gap: 24px; */
+}
+.main-block__text_paragraph{
+    display: flex;
+    /* align-items: center; */
+    row-gap: 8px;
+    /* line-height: 8px; */
+    column-gap: 8px;
+    margin: 0;
+}
+.course-assignment-block__text_paragraph{
+    width: 341px;
+}
+.main-container__p{
+    margin: 0;
+}
+.main-block__text_paragraph::before{
+    content: '\25AC';
+    width: 12px;
+    height: 24px;
+    font-size: 12px;
+    /* flex-wrap: wrap; */
+}
+
+.expectation-block__title, .education-block__title, .free-block__title,.selection-block__title{
+    margin: 0;
+    border: 0;
+    padding: 76px 224px 24px 224px;
+    row-gap: 24px;
+}
+.expectation-block__vacancies{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 48px;
+    padding: 24px 128px 24px 128px;
+    /* height: 280px; */
+    height: 232px;
+    row-gap: 48px;
+}
+.expectation-block__box{
+    width: 336px;
+    height: 232px;
+    border-radius: 24px 24px;
+    background-color: rgba(255, 255, 255, 1);
+    /* тут не понятно на счет paddinga кажется что он внутри должен быть
+     ну по макету(картинке) вроде бы так
+    поэтому я сделал внутри */
+    /* padding: 32px; */
+    row-gap: 24px;
+}
+.expectation-block__text_full{
+    padding: 32px;
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+}
+.expectation-block__text,.expectation-block__h, .education-block__text,.education-block__h, .base_text, .free-block__text,.free-block__h{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.expectation-block__h,.education-block__h,.free-block__h{
+    font-size: 24px; 
+    line-height: 28px; 
+}
+.education-block__two_cards, .free-block__two_cards,.selection-block__four_cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 48px;
+    padding: 24px 128px 24px 128px;
+    /* height: 280px; */
+    /* height: 232px; */
+    row-gap: 48px;
+}
+.education-block__box{
+    width: 528px;
+    height: 212px;
+    border-radius: 24px 24px;
+    background-color: rgba(255, 255, 255, 1);
+    /* сделал как в прошлой пидинг */
+    /* padding: 32px; */
+    row-gap: 24px;
+}
+.education-block__text_full{
+    padding: 32px;
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* тут тоже не очень понятно, просто в фигме Text blok имеет gap 44, но внутри только один элемент
+    то есть и нету между чем растояние установить
+    но у меня внешнего блока нету и по логике (этот блок) должен быть внешним, но я не плодил div (оставил один)
+     у блока внутри вроде gap 12px поэтому и поставил столько */
+    row-gap: 12px;
+}
+.education-block__text, .free-block__text{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+}
+.education-block__width_paragraph{
+    width: 444px;
+}
+.free-block__box{
+    width: 528px;
+    height: 320px;
+    border-radius: 24px 24px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.free-block__box_inline{
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    row-gap: 44px;
+}
+
+.free-block__text_full{
+    width: 464px;
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* тут тоже не очень понятно, просто в фигме Text blok имеет gap 44, но внутри только один элемент
+    то есть и нету между чем растояние установить
+    но у меня внешнего блока нету и по логике (этот блок) должен быть внешним, но я не плодил div (оставил один)
+     у блока внутри вроде gap 12px поэтому и поставил столько */
+    row-gap: 12px;
+}
+.selection-block__box{
+    width: 240px;
+    height: 160px;
+    border-radius: 24px 24px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 28px;
+}
+.selection-block__box_number{
+    width: 56px;
+    height: 56px;
+    border-radius: 16px 16px;
+    background-color: rgba(51, 51, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 92px;
+    bottom: 28px;
+    /* margin-top: 24px; */
+}
+.selection-block__h{
+    font-size: 24px; 
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1); 
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.selection-block__text{
+    /* с этим блоком я не очень понимаю как поступить
+    поэтому использовал относительное позиционирование
+    он на растояние между блоком с цифрой и блоком текста 28 px + половина блока текста = 56px 
+    поэтому пединг сверху 0 ставлю */
+    padding: 0px 32px 32px 32px;
+
+}
+.selection-block__text_in{
+    display: flex;
+    text-align: center;
+    margin: 0;
+}
+.footer-block{
+    background-color: rgba(246, 247, 248, 1);
+    /* width: 192px; */
+    height: 192px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    justify-content: center;
+}
+/* .footer-block__inner{
+    /* сначала хотел через падинг padding: 64px 0px 0px 0px;
+    height: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+
+} */ 
+
+/* .footer-block__info{
+    width: 1104px;
+    height: 84x;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    box-shadow: 0px -1px 0px 0px rgba(231, 232, 234, 1);
+    justify-content: space-between;
+} */
+.footer-block__info_main{
+    width: 1104px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    box-shadow: 0px -1px 0px 0px rgba(231, 232, 234, 1);
+}
+/* 528px */
+.footer-block__info_left{
+    width: 528px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.footer-block__info_right{
+    width: 238px;
+    height: 20px;
+    display: flex;
+    
+    align-content: center;
+}
+.footer-block__paragraph{
+    font-size: 13px; 
+    line-height: 20px; 
+    margin: 0;
+    color: rgba(0, 0, 0, 0.54);
+}
+.footer-block__paragraph_link{
+    font-size: 13px; 
+    line-height: 20px; 
+    margin: 0;
+    color: rgba(51, 111, 238, 1);
+}
