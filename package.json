@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ZotRoma/bara-na-bolote/issues"
   },
-  "homepage": "https://github.com/ZotRoma/bara-na-bolote#readme"
+  "homepage": "https://github.com/ZotRoma/bara-na-bolote#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
