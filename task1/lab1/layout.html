@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <link rel="stylesheet" type="text/css" href="./normalize.css" /> 
+
+    <link rel="stylesheet" href="./layout.css">
+    <title>Test page</title>
+</head>
+<body>
+<header>
+    <div class="header-blok">
+        <div class="header-blok__all">
+            <div class="header-blok__main">
+            
+                <div class="header-blok__main_left">
+                    <span class="header-blok__logo">
+                        <img class="header-blok__img_logo" alt="картинка" src="assets/main-logo.svg">
+                    </span>
+                    <div class="header-blok__tab">
+                        <nav class="header-blok__tab_nav" >
+                            
+                                <span class="header-blok__choice   header-blok__study" status="activ">
+                                        <a href="./layout.html" class="header-blok__link text__font" status="activ"><p class="header-blok__text ">Финтех курсы</p></a>
+                                </span>
+                            
+                                  
+                                <span class="header-blok__choice header-blok__internship" status="non activ">
+                                    <a href="./layout.html" class="header-blok__link text__font" status="non activ"><p class="header-blok__text">Стажировки</p></a>
+                                </span>
+                            
+                           
+                                <span class="header-blok__choice header-blok__event" status="non activ">
+                                         <a href="./layout.html" class="header-blok__link text__font" status="non activ" ><p class="header-blok__text">Мероприятия и партнерства</p></a>
+                                </span>
+                            
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-blok__main_right">
+                    <span class="header-blok__choice  header-blok__login">
+                        <a href="./layout.html"  class="header-blok__login header-blok__link  text__font">
+                            <span class="header-blok__text">Войти</span>
+                        </a> 
+                    </span>
+                    <span class="header-blok__choice  header-blok__img_login">
+                        <img class="header-blok__img_login" alt="войти" src="assets/login.svg">
+                    </span>
+                </div>
+        
+            </div>
+            
+        </div>
+    </div>
+</header>
+
+
+
+
+
+<div class="main-container">
+    <main>
+        <!-- первый блок  -->
+        <!-- тут "Что за курс" -->
+        <section class="section-block">
+            <div class="section-block__inner_center">
+                <div class="section-block__inner">
+                    <div class="section-block__text_block">
+                        <h1 class="section-block__title section-block__format_text text__font main__title_text">Frontend-разработчик</h1> 
+                        <div class="section-block__text section-block__format_text text__font main__base_text" >
+                            Трехмесячный бесплатный учебный курс от Финтеха, который можно проходить из любой точки России
+                        </div>
+                    </div>
+                    <section class="section-block__inner__button"><button class="section-block__button text__font main__base_text">Подробнее</button></section>
+                    
+                </div>
+            </div>
+            <img class="section-block__img" alt="картинка" src="assets/desktopHeroBannerNew.svg">
+        </section>
+
+        <!-- второй блок  -->
+        <!-- тут "Кому подойдет курс" -->
+        <section class="course-assignment-block">
+            <h1 class="course-assignment-block__title course-assignment-block__format_text text__font main__title_text">Кому подойдет курс</h1> 
+            <div class ="course-assignment-block__content">
+                <div class="course-assignment-block__box">
+                    <img class="course-assignment-block__img" alt="картинка" src="assets/image_left.svg">
+                    <div class = "course-assignment-block__text text__font main__base_text">
+                        <div class = "course-assignment-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p"> Вы студент или выпускник технических вузов</p></div>
+                        <div class = "course-assignment-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p"> Хотите научиться создавать интерфейсы</p></div>
+                        <div class = "course-assignment-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p"> Хотите познакомиться с современным JavaScript и его фреймворками</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- третий блок -->
+        <!-- тут "Что будет в курсе"  -->
+        <section class="expectation-block">
+            <h1 class="expectation-block__title expectation__format_text text__font main__title_text">Что вас ждет на курсе</h1> 
+            <div class="expectation-block__vacancies">
+                <div class="expectation-block__basic expectation-block__box">
+                    <div class="expectation-block__text_full">
+                        <h2 class="expectation-block__h text__font">Основы разработки</h2>
+                        <p class="expectation-block__text main__base_text text__font">Делимся инструментами, которые позволяют нам создавать <br>веб-продукты для миллионов клиентов</p>
+                    </div>
+                </div>
+                <div class="expectation-block__access expectation-block__box">
+                    <div class="expectation-block__text_full">
+                        <h2 class="expectation-block__h text__font">Доступ к учебным материалам онлайн</h2>
+                        <p class="expectation-block__text main__base_text text__font">Онлайн-курс с лекциями и домашними заданиями. Вы можете его пройти из любой точки России</p>
+                    </div>
+                </div>
+                <div class="expectation-block__opportunity expectation-block__box">
+                    <div class="expectation-block__text_full">
+                        <h2 class="expectation-block__h text__font">Возможность попасть в команду</h2>
+                        <p class="expectation-block__text  main__base_text text__font">Во время курса участники выполняют много практических заданий. <br>Мы замечаем лучших и приглашаем их на собеседование</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- четвертый блок -->
+        <!-- тут "Как строиться обучение"  -->
+        <!-- education -->
+        <section class="education-block">
+            <h1 class="education-block__title education__format_text text__font main__title_text">Как строится обучение</h1> 
+            <div class="education-block__two_cards">
+                <div class="education-block__basic education-block__box">
+                    <div class="education-block__text_full">
+                        <h2 class="education-block__h text__font">Онлайн-занятия 1 раз в неделю</h2>
+                        <div class="education-block__text main__base_text text__font">
+                            <div class = "education-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p education-block__width_paragraph"> Курс стартует в середине февраля и длится три месяца</p></div>
+                            <div class = "education-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p education-block__width_paragraph"> В неделю будете тратить около 2-3 часов на лекции и столько, сколько сочтете нужным, на домашнюю работу</p></div>
+                            <!-- <p  class="education-block__paragraph base_text"></p>
+                            <p  class="education-block__paragraph base_text">В неделю будете тратить около 2-3 часов на лекции и столько, сколько сочтете нужным, на домашнюю работу</p> -->
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="education-block__access education-block__box">
+                    <div class="education-block__text_full">
+                        <h2 class="education-block__h text__font">Интерактив и нетворкинг</h2>
+                        <div class="education-block__text main__base_text text__font">
+                            <div class = "education-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p education-block__width_paragraph"> Вы сможете задавать вопросы преподавателям во время лекции в Зуме или в общем чате</p></div>
+                            <div class = "education-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p education-block__width_paragraph"> Обсуждать материалы и домашки вместе с сокурсниками. Это поможет найти новый профессиональный круг общения</p></div>
+                            <!-- <p class="education-block__paragraph base_text">Вы сможете задавать вопросы преподавателям во время лекции в Зуме или в общем чате</p>
+                            <p  class="education-block__paragraph base_text">Обсуждать материалы и домашки вместе с сокурсниками. Это поможет найти новый профессиональный круг общения</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- пятый блок -->
+        <!-- тут "Бесплатное обучение"  -->
+        <!-- free -->
+        <section class="free-block">
+            <h1 class="free-block__title free__format_text text__font main__title_text">Бесплатное обучение</h1> 
+            <div class="free-block__two_cards">
+                <div class="free-block__box">
+                    <div class="free-block__box_inline">
+                        <!-- shlapa-academic -->
+                        <img class="free-blok__img" alt="войти" src="assets/shlapa-academic.svg">
+                        <div class="free-block__text_full">
+                            
+                            <h2 class="free-block__h text__font">Каждый студент проходит тщательный отбор</h2>
+                            <div class="free-block__text main__base_text text__font">
+                                <div class = "free-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p free-block__width_paragraph"> Пройдите экзамен и заполните анкету, которая выполняет функцию портфолио</p></div>
+                                <div class = "free-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p free-block__width_paragraph"> Расскажите подробно о своем опыте: сильное портфолио влияет на решение</p></div>
+                                <!-- <p  class="education-block__paragraph base_text"></p>
+                                <p  class="education-block__paragraph base_text">В неделю будете тратить около 2-3 часов на лекции и столько, сколько сочтете нужным, на домашнюю работу</p> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="free-block__box">
+                    <div class="free-block__box_inline">
+                        <!-- list -->
+                        <img class="free-blok__img" alt="войти" src="assets/list.svg">
+                        <div class="free-block__text_full">
+                            
+                            <h2 class="free-block__h text__font">Одинаковые условия для всех</h2>
+                            <div class="free-block__text main__base_text text__font">
+                                <div class = "free-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p free-block__width_paragraph"> Чтобы успешно закончить курс, нужно выполнить обязательные домашние задания и защитить проект</p></div>
+                                <div class = "free-block__text_paragraph main-block__text_paragraph"> <p class="main-container__p free-block__width_paragraph"> После обучения выдаем сертификат, подтверждающий, <br> что вы освоили теорию и навыки веб-разработки</p></div>
+                                <!-- <p  class="education-block__paragraph base_text"></p>
+                                <p  class="education-block__paragraph base_text">В неделю будете тратить около 2-3 часов на лекции и столько, сколько сочтете нужным, на домашнюю работу</p> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- шестой блок -->
+        <!-- тут "Как попасть на курс"  -->
+        <!-- selection -->
+        <section class="selection-block">
+            <h1 class="selection-block__title selection__format_text text__font main__title_text">Бесплатное обучение</h1> 
+            <div class="selection-block__four_cards">
+
+                <div class="selection-block__box">
+                    <div class="selection-block__box_inline">
+                        <div class="selection-block__box_number">
+                            <p class="selection-block__h  text__font">1</p>
+                        </div>
+                        <div class="selection-block__text main__base_text text__font">
+                            <p class="selection-block__text_in">Оставьте заявку онлайн и зарегистрируйтесь на сайте</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selection-block__box">
+                    <div class="selection-block__box_inline">
+                        <div class="selection-block__box_number">
+                            <p class="selection-block__h  text__font">2</p>
+                        </div>
+                        <div class="selection-block__text main__base_text text__font">
+                            <p class="selection-block__text_in">Расскажите в анкете, почему хотите изучить веб-разработку</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="selection-block__box">
+                    <div class="selection-block__box_inline">
+                        <div class="selection-block__box_number">
+                            <p class="selection-block__h  text__font">3</p>
+                        </div>
+                        <div class="selection-block__text main__base_text text__font">
+                            <p class="selection-block__text_in">Пройдите экзамен: решите несколько задач по программированию</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="selection-block__box">
+                    <div class="selection-block__box_inline">
+                        <div class="selection-block__box_number">
+                            <p class="selection-block__h  text__font">4</p>
+                        </div>
+                        <div class="selection-block__text main__base_text text__font">
+                            <p class="selection-block__text_in">Дождитесь письма <br>об итогах отбора. Начните учиться</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<!-- тут footer -->
+<!-- он не очень в макете оформлен
+кажется что там все через position
+но мне показалось что это не круто
+поэтому через flex сделал -->
+<footer>
+    <div class="footer-block">
+        <!-- <div class="footer-block__inner">
+            <div class="footer-block__info"> -->
+                <div class="footer-block__info_main">
+                    <div class="footer-block__info_left">
+                        <p class="footer-block__paragraph text__font">© 2022 «Тинькофф Образование»</p>
+                    </div>
+                    <div class="footer-block__info_right">
+                        <p class="footer-block__paragraph text__font">По вопросам пишите на <span class="footer-block__paragraph_link text__font">edu@tinkoff.ru</span></p>
+                    </div>
+                </div>
+            <!-- </div>
+        </div> -->
+    </div>
+</footer> 
+
+
+</body>
+</html>
