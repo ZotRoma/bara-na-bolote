@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="./normalize.css" /> 
+
+        <link rel="stylesheet" href="./layout.css">
+        <title>Create task</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-blok">
+                <div class="header-blok__all">
+                    <div class="header-blok__main">
+
+
+                        <div class="header-blok__main_left">
+                            <p class="text__font text_center text__block header-blok__text text_size">Зотов Роман 6407</p>
+                        </div>
+
+
+                        <div class="header-blok__main_right">
+                            <button class="header-blok__button text__font text_center text__block text_size" onclick="defaultOnClick()">
+                                <!-- <p class="block_center "></p> -->
+                                Засетапить начальные значения
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+        <div class="main-container">
+            <main class="main-block">
+
+                <!-- первый блок  -->
+                <!-- тут "Линия между" -->
+                <section class="left-line-block">
+
+                </section>
+
+                
+                <!-- второый блок  -->
+                <!-- тут "Форма добавления карточки товара" -->
+                <section class="form-block">
+                    <p class="form-block-block__title text__font text__block text_h">Форма добавления карточки товара</p> 
+                    
+                    <div class="form-block__card"> 
+                        <!-- onsubmit="return checkForm(this)" -->
+                        <form id="card-block"  method="POST">
+                            <label>
+                                <input class="form-block__input text__font text__block text_size" type="text" name="name" id="name" placeholder="Название товара" required autofocus>
+                            </label>
+                            
+                            <label>
+                                <input class="form-block__input text__font text__block text_size" type="text" name="image" id="image" placeholder="Ссылка на изображение" required>
+                            </label>
+                            
+                            <label>
+                                <textarea class="form-block__textarea text__font text__block text_size" type="text" name="description" id="description" placeholder="Описание" required></textarea>
+                            </label>
+                            
+                            <label>
+                                <input class="form-block__input text__font text__block text_size" type="number" name="code" id="code" placeholder="Код товара" required>
+                            </label>
+
+                            <label>
+                                <input class="form-block__input text__font text__block text_size" type="text" name="provider" id="provider" placeholder="Поставщик" required>
+                            </label>
+
+                            <div class="card-block__button_d">
+                                <button  class="card-block__button text__font text__block text_size" type="submit" >Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </section>
+
+                <!-- третий блок  -->
+                <!-- тут "Линия между" -->
+                <section class="line-block">
+
+                </section>
+
+
+                <!-- четвертый блок  -->
+                <!-- тут "Витрина карточек" -->
+                <section class="cart-block">
+                    <p class="form-block-block__title text__font text__block text_h">Витрина карточек</p>
+                    <div id ="cartContainer"  class="showcase-block">
+
+                        <!-- шаблон карточки с которого создавалась js функция -->
+                        <div class="invisible">
+                            <div id = "cardTest" class="form-data">
+                                <div class="form-block_in_card">
+                                    <div class="form-block-left">
+                                        <div class="text__font text__block text_size">ID: <p tag="id" id="id"></p></div>
+                                        <img class="form-block__img" tag="image" id="image" alt="картинка" src="assets/desktopHeroBannerNew.svg">
+                                    </div>
+                                    
+                                    <div class="form-block-right">
+                                        <div >
+                                            <button class="button-block text__font text_size" id="update">Редактировать</button>
+                                            <button class="button-block text__font text_size" id="delete">Удалить</button>
+                                        </div>
+                                        <div><p tag="name" id="name" class="text__font text__block text_h"></p></div>
+                                        <div class="text__font text__block text_size">Поставщик: <p tag="provider" id="provider"></p></div>
+                                    </div>
+                                </div>
+                        
+                                <div>Описание: <p class="text__font text__block text_size" tag="description" id ="description"></p></div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </section>
+
+                <!-- пятый блок  -->
+                <!-- тут "Линия справа" -->
+                <section  class="right-line-block">
+                    
+                    
+                    
+
+                </section>
+
+            </main>
+        </div>
+
+
+        <footer>
+            <div class="footer-block">
+
+            </div>
+        </footer> 
+
+        <script src="js/main.js"></script>
+    
+    </body>
+</html>
+
