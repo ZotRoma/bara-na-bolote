@@ -83,8 +83,8 @@ export default function Home() {
 
   const filmClick = (id) => {
     // Инвертируем значение состояния при каждом нажатии
-    setTypeFilmBase(typeRabFilm)
-    setTypeFilm(id)
+    setTypeFilmBase(typeRabFilm);
+    setTypeFilm(id);
     
   };
 
@@ -115,8 +115,6 @@ export default function Home() {
 
   return (
     <>
-    <meta charSet="utf-8" />
-    <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />  
     <title>Админка фильмотеки</title>
     <header>
       <div className={styles.header_blok}>
