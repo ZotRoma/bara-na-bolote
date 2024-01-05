@@ -1,0 +1,22 @@
+:root{
+    
+    --text-color-header:rgb(0, 0, 1);
+    --text-header-shadow:rgba(0, 0, 0, 0.25);
+    --button-shadow:rgba(0, 0, 0, 0.25);
+    --obvesti-vipendritsya:rgba(255, 221, 45, 1);
+    --color-left-film: rgba(217, 217, 217, 0.52);
+    --color-input:rgba(236, 241, 247, 1);
+    --color-button-search:rgba(51, 111, 238, 1);
+    --border-color:rgba(248, 248, 248, 0.52);   
+    --main-color:rgba(248, 248, 248, 0.723);
+    --film-cart:rgba(255, 255, 255, 1);
+    --decline-button:rgba(236, 241, 247, 1);
+    --main-grey:rgba(108, 108, 108, 0.81);
+}
+p{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+}
